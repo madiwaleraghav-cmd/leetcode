@@ -1,6 +1,6 @@
 class Solution {
     public List<Integer> luckyNumbers(int[][] matrix) {
-        List<Integer> list=new ArrayList<>();
+        HashSet<Integer> list=new HashSet<>();
         List<Integer> lucky=new ArrayList<>();
 
         for(int i=0;i<matrix.length;i++){
@@ -26,7 +26,7 @@ class Solution {
                 lucky.add(colmax);
             }
         }
-        System.out.print(list);
+       
         return lucky;
     }
 }
